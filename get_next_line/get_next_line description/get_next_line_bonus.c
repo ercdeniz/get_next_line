@@ -135,10 +135,9 @@ int main()
 		printf("2. fd %d. satır: %s",i, line);
 		free(line);
 		line = get_next_line(fd3);
-		printf("3. fd %d. satır: %s",i, line);
+		printf("3. fd %d. satır: %s",i++, line);
 		free(line);
 		printf("\n");
-  		i++;
 	}
 	free(line);
 	close(fd1);
