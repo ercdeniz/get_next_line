@@ -126,10 +126,10 @@ int main()
 	fd2 = open("test2.txt", O_RDONLY | O_CREAT , 0777);
 	fd3 = open("test3.txt", O_RDONLY | O_CREAT , 0777);
 	int i = 1;
-	while (i <= 3)
+	while (i <= 4)
 	{
 		line = get_next_line(fd1);
-		printf("1. fd %d. satır: %s",i++, line);
+		printf("1. fd %d. satır: %s",i, line);
 		free(line);
 		line = get_next_line(fd2);
 		printf("2. fd %d. satır: %s",i, line);
@@ -138,6 +138,7 @@ int main()
 		printf("3. fd %d. satır: %s",i, line);
 		free(line);
 		printf("\n");
+  		i++;
 	}
 	free(line);
 	close(fd1);
