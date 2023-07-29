@@ -74,7 +74,7 @@ static char	*trimmed_cache(char *cache)
 		i++;
 	res = ft_substr(cache, i + 1, ft_strlen(cache));
 	if (!res)
-		return (free_or_nl(&cache, 0), NULL);
+		return (free_or_nl(&cache, 0));
 	free_or_nl(&cache, 0);
 	return (res);
 }
@@ -145,4 +145,4 @@ int main()
 	close(fd3);
 	return (0);
 }
- */
+*/
