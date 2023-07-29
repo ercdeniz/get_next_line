@@ -107,24 +107,3 @@ char	*get_next_line(int fd)
 	}
 	return (free_or_nl(&cache, 1));
 }
-
-/*
-#include <fcntl.h>
-#include <stdio.h>
-
-int	main(void)
-{
-	int		fd;
-	char	*line;
-	int		i;
-
-	i = 1;
-	fd = open("test.txt", O_RDONLY | O_CREAT , 0777);
-	while ((line = get_next_line(fd)))
-	{
-		printf("satır %d: %s",i++, line);
-		free(line);
-	}
-	return (0);
-}
-*/
