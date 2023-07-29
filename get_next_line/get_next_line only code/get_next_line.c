@@ -5,7 +5,7 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ercdeniz <ercdeniz@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/18 09:15:23 by cbernot           #+#    #+#             */
+/*   Created: 2022/11/18 09:15:23 by ercdeniz           #+#    #+#            */
 /*   Updated: 2023/07/26 19:48:03 by ercdeniz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
@@ -74,7 +74,7 @@ static char	*trimmed_cache(char *cache)
 		i++;
 	res = ft_substr(cache, i + 1, ft_strlen(cache));
 	if (!res)
-		return (free_or_nl(&cache, 0), NULL);
+		return (free_or_nl(&cache, 0));
 	free_or_nl(&cache, 0);
 	return (res);
 }
@@ -127,4 +127,4 @@ int	main(void)
 	}
 	return (0);
 }
- */
+*/
